@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+
+  <div class="success-check">
+    <div class="img-message">
+      <img src="assets/images/icon-success-check.svg" alt="/">
+      <h2>Message Sent!</h2>
+    </div>
+
+    <div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h1>Contact Us</h1>
+
+      <form action="">
+          <div class="form-group">
+
+              <div class="name-group">
+                <label for="fname">First Name<span>*</span></label>
+                <input type="text" id="first-name" name="first-name" title="Input your First Name" minlength="3" maxlength="11"/>
+                  <p id="first_error"></p>
+              </div>
+
+              <div class="name-group">
+                <label for="lname">Last Name<span>*</span></label>
+                <input type="text" id="last-name" name="last-name" title="Input your Last Name" minlength="3" maxlength="11"/>
+                <p id="last_error"></p>
+              </div>
+
+          </div>
+
+          <div class="name-group">
+            <label for="Email">Email Address<span>*</span></label>
+            <input type="email" name="Email" id="email" title="Input your Email" >
+            <p id="email_error"></p>
+          </div>
+
+          <div class="name-group">
+            <label for="Query-Type">Query-Type<span>*</span></label>
+
+              <div class="Query-Type">
+                <div class="Type-group">
+                  <input type="radio" id="general-enquiry" class="radio-type" name="query-type" value="General Enquiry">
+                  <label for="general-enquiry">General Enquiry</label>
+                </div>
+  
+                <div class="Type-group">
+                  <input type="radio" id="support-request" class="radio-type" name="query-type" value="Support Request">
+                  <label for="support-request">Support Request</label>
+                </div>
+              </div>
+            <p id="radio_error"></p>
+          </div>
+
+          <div class="name-group">
+            <label for="message">Message<span>*</span></label>
+            <textarea id="message" name="message"  rows="3"   minlength="10"></textarea>
+            <p id="textarea-error"></p>
+          </div>
+
+          <div class="consent-check">
+            <div class="Check-Type">
+              <input type="checkbox" class="check-type" id="consent" name="consent">
+              <label for="consent">I consent to being contacted by the team<span>*</span></label>
+            </div>
+            <p id="check_error"></p>
+          </div>
+
+        <button type="submit" onclick="submitBtn()">Submit</button>
+      </form>
+  </div>
+
+  <script src="script.js"></script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Dev. Mike</a>.
+  </div>
+</body>
+</html>
+
+<!-- Hello, I would like to know if you're able to build shopify e-commerce sites. We're starting a business and we're going to use shopify. But it would be great to work with an agency who specialises in working with it -->
